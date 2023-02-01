@@ -8,8 +8,8 @@ void main() {
         () {
       final Place placeTest = mockedPlace;
 
-      expect(placeTest.id, 0);
-      expect(placeTest.id, isA<int>());
+      expect(placeTest.id, "75d11f00-7ebe-4c8e-8fdd-6662db353d9c");
+      expect(placeTest.id, isA<String>());
       expect(placeTest.name, 'Legend');
       expect(placeTest.name, isA<String>());
       expect(placeTest.latitude, -59.87432174921);

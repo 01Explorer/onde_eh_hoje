@@ -9,8 +9,8 @@ void main() {
         () {
       final User userMock = mockedUser;
 
-      expect(userMock.id, 0);
-      expect(userMock.id, isA<int>());
+      expect(userMock.id, "75d11f00-7ebe-4c8e-8fdd-6662db353d9c");
+      expect(userMock.id, isA<String>());
       expect(userMock.name, 'Gabriel');
       expect(userMock.name, isA<String>());
       expect(userMock.email, 'gabjhsa@gmail.com');
