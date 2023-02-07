@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:onde_eh_hoje/layers/domain/repositories/comment_repositories/delete_comment_repository.dart';
 import 'package:onde_eh_hoje/layers/infra/datasources/remote/comment_datasource/comment_remote_datasource.dart';
-import 'package:onde_eh_hoje/layers/infra/repositories/comment_repositories/delete_comment_repository_implementation.dart';
+import 'package:onde_eh_hoje/layers/infra/repositories/comment_repositories/delete_comment_repository/delete_comment_repository_implementation.dart';
 import '../../../../mocks/mocks.dart';
 
 class MockCommentRemoteDataSource extends Mock
