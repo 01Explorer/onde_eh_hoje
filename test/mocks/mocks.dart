@@ -20,7 +20,10 @@ final Comment mockedComment = Comment(
     place: mockedPlace);
 
 final Comment mockedNullIdComment = Comment(
-    user: mockedUser, message: 'This is a sample message', place: mockedPlace);
+  user: mockedUser,
+  message: 'This is a sample message',
+  place: mockedPlace,
+);
 
 final Map<String, dynamic> mockDataJson = {
   'id': '75d11f00-7ebe-4c8e-8fdd-6662db353d9c',
@@ -67,4 +70,46 @@ final Map<String, dynamic> mockedListofUsersJson = {
       'email': 'gabjhsa@gmail.com'
     }
   ]
+};
+
+final Map<String, dynamic> mockedListOfPlacesJson = {
+  'places': [
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Legend',
+      'latitude': -59.87432174921,
+      'longitude': 60.8320948
+    },
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Yves',
+      'latitude': -59.87432174921,
+      'longitude': 60.8320948
+    },
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Spirit',
+      'latitude': -59.87432174921,
+      'longitude': 60.8320948
+    },
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Legend',
+      'latitude': -59.87432174921,
+      'longitude': 60.8320948
+    },
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Legend',
+      'latitude': -59.87432174921,
+      'longitude': 60.8320948
+    }
+  ]
+};
+
+final Map<String, dynamic> mockedPlaceJson = {
+  'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+  'name': 'Legend',
+  'latitude': -59.87432174921,
+  'longitude': 60.8320948
 };
