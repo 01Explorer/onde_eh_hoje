@@ -37,3 +37,34 @@ final Map<String, dynamic> mockDataJson = {
     'longitude': 60.8320948
   },
 };
+
+final Map<String, dynamic> mockUserJson = {
+  'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+  'name': 'Gabriel',
+  'email': 'gabjhsa@gmail.com'
+};
+
+final Map<String, dynamic> mockedListofUsersJson = {
+  'users': [
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Gabriel',
+      'email': 'gabjhsa@gmail.com'
+    },
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Gabriel',
+      'email': 'gabjhsa@gmail.com'
+    },
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Gabriel',
+      'email': 'gabjhsa@gmail.com'
+    },
+    {
+      'id': "75d11f00-7ebe-4c8e-8fdd-6662db353d9c",
+      'name': 'Gabriel',
+      'email': 'gabjhsa@gmail.com'
+    }
+  ]
+};
