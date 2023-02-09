@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:onde_eh_hoje/external/datasources/remote/user_datasource/user_remote_datasource_implementation.dart';
+import 'package:onde_eh_hoje/layers/external/datasources/remote/user_datasource/user_remote_datasource_implementation.dart';
 import 'package:onde_eh_hoje/layers/domain/entities/user_entity.dart';
 import 'package:onde_eh_hoje/layers/domain/services/http_service/http_service.dart';
 import 'package:onde_eh_hoje/layers/domain/utils/utils.dart';

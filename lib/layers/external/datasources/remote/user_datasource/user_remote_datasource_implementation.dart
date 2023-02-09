@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import '../../../../layers/domain/entities/user_entity.dart';
-import '../../../../layers/domain/services/http_service/http_service.dart';
-import '../../../../layers/domain/utils/utils.dart';
-import '../../../../layers/infra/datasources/remote/user_datasource/user_remote_datasource.dart';
+import '../../../../domain/entities/user_entity.dart';
+import '../../../../domain/services/http_service/http_service.dart';
+import '../../../../domain/utils/utils.dart';
+import '../../../../infra/datasources/remote/user_datasource/user_remote_datasource.dart';
 
 class UserRemoteDataSourceImplementation implements UserRemoteDataSource {
   final HttpService httpService;
