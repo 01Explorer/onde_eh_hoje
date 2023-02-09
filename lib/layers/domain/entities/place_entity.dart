@@ -17,4 +17,20 @@ class Place {
         latitude: latitude ?? this.latitude,
         longitude: longitude ?? this.longitude);
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'latitude': latitude,
+      'longitude': longitude,
+    };
+  }
+
+  factory Place.fromJson(Map<String, dynamic> json) {
+    return Place(
+        id: json['id'],
+        name: json['name'],
+        latitude: json['latitude'],
+        longitude: json['longitude']);
+  }
 }
