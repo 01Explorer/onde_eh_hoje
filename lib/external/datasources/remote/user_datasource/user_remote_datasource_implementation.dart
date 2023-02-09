@@ -11,7 +11,7 @@ class UserRemoteDataSourceImplementation implements UserRemoteDataSource {
   @override
   Future<Either<Exception, bool>> delete(String id) async {
     var response = await httpService
-        .delete(Utils.deleteApiEndpoint, queryParameters: {'id': id});
+        .delete(Utils.deleteUserApiEndpoint, queryParameters: {'id': id});
     if (response.statusCode != null) {
       return right(true);
     }
@@ -20,7 +20,7 @@ class UserRemoteDataSourceImplementation implements UserRemoteDataSource {
 
   @override
   Future<Either<Exception, User>> edit(String id, String name) async {
-    var response = await httpService.put(Utils.putApiEndpoint,
+    var response = await httpService.put(Utils.putUserApiEndpoint,
         queryParameters: {'id': id}, data: {'name': name});
     if (response.statusCode != null) {
       return right(User.fromJson(response.data));
@@ -30,7 +30,7 @@ class UserRemoteDataSourceImplementation implements UserRemoteDataSource {
 
   @override
   Future<Either<Exception, List<User>>> getAllUsers() async {
-    var response = await httpService.get(Utils.getApiEndpoint);
+    var response = await httpService.get(Utils.getUserApiEndpoint);
     if (response.statusCode != null) {
       List<User> usersList = [];
       for (var element in response.data['users']) {
@@ -44,7 +44,7 @@ class UserRemoteDataSourceImplementation implements UserRemoteDataSource {
   @override
   Future<Either<Exception, User>> getUserById(String id) async {
     var response = await httpService
-        .get(Utils.getApiEndpoint, queryParameters: {'id': id});
+        .get(Utils.getUserApiEndpoint, queryParameters: {'id': id});
     if (response.statusCode != null) {
       return right(User.fromJson(response.data));
     }
@@ -53,8 +53,8 @@ class UserRemoteDataSourceImplementation implements UserRemoteDataSource {
 
   @override
   Future<Either<Exception, User>> signUpUser(User user) async {
-    var response =
-        await httpService.post(Utils.postApiEndpoint, data: user.toJson(user));
+    var response = await httpService.post(Utils.postUserApiEndpoint,
+        data: user.toJson(user));
     if (response.statusCode != null) {
       return right(response.data);
     }
