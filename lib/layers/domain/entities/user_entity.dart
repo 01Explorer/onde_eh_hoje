@@ -15,4 +15,19 @@ class User {
       email: email ?? this.email,
     );
   }
+
+  Map<String, dynamic> toJson(User user) {
+    return {
+      'name': user.name,
+      'email': email,
+    };
+  }
+
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(
+      id: json['id'],
+      name: json['name'],
+      email: json['email'],
+    );
+  }
 }
