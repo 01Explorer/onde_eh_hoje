@@ -16,4 +16,20 @@ class Comment {
   }) {
     createdAt = DateTime.now();
   }
+
+  factory Comment.fromJson(Map<String, dynamic> json) {
+    return Comment(
+        user: User.fromJson(json['user']),
+        message: json['message'],
+        place: Place.fromJson(json['place']),
+        id: json['id']);
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'user': user.toJson(user),
+      'message': message,
+      'place': place.toJson()
+    };
+  }
 }
